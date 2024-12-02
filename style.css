@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* NAVIGATION VOSS */
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.phonebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.9);
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phonebar a {
+    font-size: 150%;
+}
+
+.phonebar li:first-child {
+    margin-bottom: 1%;
+    padding: 20px;
+}
+
+
+.menu-button{
+    display: none;
+  }
+
+.navbar .topnav {
+    display: flex;
+    list-style-type: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid white;
+}
+ 
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+
+/* MAIN CONTENT DITO */
+.firstPart {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.left-column,
+.right-column {
+    flex-basis: 45%;
+}
+
+/* HERO */
+.profileInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    /* border: 1px solid white; */
+    width: 200%;
+    height: auto;
+}
+
+.profile-image {
+    width: 40%;
+    height: auto;
+    border-radius: 2%;
+    margin-right: 20px;
+}
+
+.profileDetails .mainP{
+    font-size: 150%;
+    width: 100%;
+}
+
+.socialItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.socialItem a {
+    font-size: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+span {
+    font-size: 16px;
+}
+
+.quote h1 {
+    width: 40%;
+    font-size: 1em;
+    margin-top: -2%;
+    margin-bottom: 2%;
+}
+
+.fName {
+    font-size: 5em;
+}
+
+.aboutMe {
+    font-size: 1.3em;
+}
+
+
+
+/* DITO ANG ABOUT SECTION */
+.nouns {
+    background-color: #92edff;
+    padding: 5%;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 4%;
+}
+
+.nouns h1 {
+    font-size: 3em;
+    font-weight: 100;
+    color: black;
+}
+
+.skillContainer {
+    display: flex;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.skill {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+.skillContent {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 10px;
+    width: 90%;
+}
+
+.column p:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column p {
+    margin: 0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+
+.toolContainer {
+    border: 1px solid white;
+    background-color: #8AECFF;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-top: 4%;
+}
+
+.toolTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.toolContent p{
+    color: black;
+}
+.toolsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.toolLogo {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.toolLogo img {
+    width: 50px;
+    height: auto;
+}
+
+.toolLogo:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+/* END OF ABOUT SECTION */
+
+
+
+
+.footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 3%;
+}
+
+
+/* TABLET  */
+@media (max-width: 768px) {
+
+.hideOnMobile{
+    display: none;
+}
+
+.menu-button{
+    display: block;
+}
+
+.profileInfo {
+    width: 100%;
+    /* display: block; */
+    margin: auto;
+}
+
+.main-content {
+    flex-direction: column;
+}
+
+.profileDetails .mainP{
+    font-size: 100%;
+}
+
+.navbar a {
+    font-size: 100%;
+}
+.socialItem a {
+    font-size: 80%;
+}
+
+.intro h1 {
+    width: 100%;
+}
+
+.skillContainer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 0%;
+}
+
+.skillContent {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column {
+    align-items: left;
+}
+
+
+.left-column,
+.right-column {
+    flex-basis: auto;
+}
+
+.content-sections {
+    flex-direction: column;
+}
+
+.content-sections .section {
+    flex-basis: auto;
+    margin-bottom: 20px;
+}
+}
+
+@media (max-width: 425px) {
+.profileDetails .mainP{
+    font-size: 100%;
+    width: 100%;
+    display: none;
+}
+
+.socialItem {
+    display: none;
+}
+
+.intro {
+    margin-top: -10%;
+}
+
+.firstPart {
+    margin: 0 auto;
+}
+
+.profileInfo {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.profile-image {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.socialItem a {
+    font-size: 80%;
+}
+
+.fName {
+    font-size: 3em;
+}
+
+.aboutMe {
+    font-size: .8em;
+}
+
+.nouns h1 {
+    font-size: 2em;
+}
+.skill {
+    font-size: 1.5rem;
+}
+
+.column p {
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.skillContent {
+    gap: 10px;
+}
+}
