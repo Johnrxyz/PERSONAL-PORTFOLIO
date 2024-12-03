@@ -12,14 +12,14 @@
           <nav class="navbar">
             <ul class="phonebar">
                 <li onclick=hideSidebar()><a href="#"><p>close</p></a></li>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#aboutSection">ABOUT</a></li>
                 <li><a href="#">CONTACT</a></li>
               </ul>
 
             <ul class="topnav">
-              <li class="hideOnMobile"><a href="#">HOME</a></li>
-              <li class="hideOnMobile"><a href="#">ABOUT</a></li>
+              <li class="hideOnMobile"><a href="#hero">HOME</a></li>
+              <li class="hideOnMobile"><a href="#aboutSection">ABOUT</a></li>
               <li class="hideOnMobile"><a href="#">CONTACT</a></li>
 
               <li class="menu-button" onclick=showSidebar()><a href="#"><p>JUMP THROUGH SECTION +</p></a></li>
@@ -27,20 +27,20 @@
           </nav>
         </header>
 
-      <section class="firstPart">
-          <div class="main-content">
+      <section class="firstPart" id="hero">
+          <div class="mainContent">
             <div class="right-column">
               <div class="profileInfo">
                 <div class="profile-image">
                   <img src="assets/me.png" alt="a picture of the Boss (Johnrey Mansilungan)" width="100%" height="auto" style="border-radius: 2%;">
                 </div>
-
+                
                 <div class="profileDetails">
                   <p class="mainP">Reincarnated in <strong>2005</strong></p>
                   <p class="mainP">Born in <strong>Lucena City, Philippines</strong></p>
-                  <p class="mainP">Studying at <strong>Dalubhasaan ng Lunsod ng Lucena</strong></p>
+                  <p class="mainP" id="lastChild">Studying at <strong>Dalubhasaan ng Lunsod ng Lucena</strong></p>
 
-                  <br> 
+                  
                   <div class="socialItem">
                     <img src="assets/fb.png" alt="Facebook Icon" class="icon">
                     <span><a href="https://www.facebook.com/johnrey.mansilungan" target="_blank">Johnrey Mansilungan</a></span>
@@ -54,10 +54,14 @@
                       <span><a href="https://www.instagram.com/johnrxyz_/" target="_blank">@johnrxyzu_</a></span>
                   </div>
                   <div class="socialItem">
-                      <img src="assets/github.png" alt="Web Icon" class="icon">
+                      <img src="assets/github.png" alt="GitHub Icon" class="icon">
                       <span><a href="https://github.com/Johnrxyz" target="_blank">Johnrxyz</a></span>
-  
                   </div>
+
+                  <div  class="socialItem" id="socialBTN" onclick=showSocials()>
+                    <span><a href="">MY SOCIALS ⟶</a></span>
+                </div>
+
                 </div>
               </div>
             </div>
@@ -73,7 +77,7 @@
             </section>
       </section>
 
-      <section class="about">
+      <section class="about" id="aboutSection">
         <div class="nouns">
           <h1>SON. BROTHER. FRIEND. <br>
             FAMILY. STUDENT. <br>
@@ -127,11 +131,11 @@
               <div class="toolLogo"><img src="assets/photoS.png" alt="photoshop logo"><p>Photoshop</p></div>
               <div class="toolLogo"><img src="assets/figma.png" alt="figma logo"><p>Figma</p></div>
               <div class="toolLogo"><img src="assets/github copy.png" alt="github logo"><p>github</p></div>
+              <div class="toolLogo"><img src="assets/capcut.png" alt="CapCut logo"><p>CapCut</p></div>
               <div class="toolLogo" style="padding-top: 15%;"><img src="assets/canva.png" alt="Canva logo"><p>Canva</p></div>
             </div>
           </div>
         </div>
-
       </section>
 
       <div class="footer">
