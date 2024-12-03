@@ -14,11 +14,22 @@ body {
     padding: 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* NAVIGATION VOSS */
 .header {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: .5%;
+    padding-bottom: .5%;
 }
 
 .phonebar {
@@ -36,13 +47,13 @@ body {
     align-items: center;
 }
 
-.phonebar a {
-    font-size: 150%;
+.phonebar li {
+    font-size: 1.2rem;
 }
 
 .phonebar li:first-child {
     margin-bottom: 1%;
-    padding: 20px;
+    padding: 12px;
 }
 
 
@@ -55,11 +66,12 @@ body {
     list-style-type: none;
     padding-top: 2%;
     padding-bottom: 2%;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
 }
  
 .navbar li {
     margin: 0 20px;
+    font-size: 1.2rem;
 }
 
 .navbar a {
@@ -74,7 +86,8 @@ body {
 .firstPart {
     border: 1px solid white;
     border-radius: 20px;
-    padding: 3%;
+    padding: 2% 5%;
+    margin-top: 5.5%;
 }
 
 .mainContent {
@@ -120,7 +133,7 @@ body {
     margin-bottom: 5px;
 }
 
-.socialItem a {
+.socialItem a, #socialBTN{
     font-size: 100%;
     text-decoration: none;
     color: white;
@@ -135,6 +148,10 @@ body {
 
 #socialBTN {
     display: none;
+}
+
+#closesocialBTN {
+    display: none; 
 }
 
 span {
@@ -175,7 +192,7 @@ span {
 
 .skillContainer {
     display: flex;
-    padding: 20px;
+    padding: 5%;
     border: 1px solid white;
     border-radius: 20px;
     width: 100%;
@@ -218,7 +235,7 @@ span {
 .toolContainer {
     border: 1px solid white;
     background-color: #8AECFF;
-    padding: 2rem;
+    padding: 5%;
     border-radius: 20px;
     margin-top: 4%;
 }
@@ -259,7 +276,69 @@ span {
 /* END OF ABOUT SECTION */
 
 
+/* PROJECT SECTION */
+.projectSection {
+    display: flex;
+    padding: 3% 5%;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    margin-top: 4%;
+  }
+  
+.jumpContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+.jumpHeader {
+    align-self: flex-end;
+  }
 
+.jumpHeader a{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.jumpList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+.jumpList li {
+    font-size: 1.5rem;
+  }
+  
+.jumpList a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.jumpList a:hover {
+    color: #aaa; 
+  }
+
+.jumpHeader a:hover {
+    color: #d4d4d4; 
+  }
 
 .footer {
     color: white;
@@ -269,6 +348,73 @@ span {
     margin-top: 3%;
 }
 
+
+/* CONTACT SECTION */
+.contactSection {
+    background-color: #8AECFF;
+    padding: 3% 5%;
+    margin-top: 4%;
+    border-radius: 20px;
+    border: 1px solid white;
+    
+  }
+  
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+  
+.contactText{
+    flex: 1 1 40%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+.contactForm {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+.formRow {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+input, textarea {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+  }
+  
+.submitButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0.75rem 2rem;
+    background-color: transparent;
+    color:black;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    gap: 0.5rem;
+    font-weight: bold;
+  }
 
 /* TABLET  */
 @media (max-width: 768px) {
@@ -332,6 +478,10 @@ span {
     flex-basis: auto;
 }
 
+.formRow {
+    flex-direction: column;
+  }
+
 .content-sections {
     flex-direction: column;
 }
@@ -355,6 +505,7 @@ span {
 
 .firstPart {
     margin: 0 auto;
+    margin-top: 8%;
 }
 
 .profileInfo {
@@ -390,7 +541,7 @@ span {
 }
 
 .fName {
-    font-size: 2.6em;
+    font-size: 2.5em;
 }
 
 .aboutMe {
@@ -405,11 +556,26 @@ span {
 }
 
 .column p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: left;
 }
 
 .skillContent {
     gap: 10px;
 }
+
+.contactContainer {
+    padding: 15px;
+  }
+
+input,
+textarea {
+    font-size: 14px;
+  }
+
+.submitButton{
+    font-size: 14px;
+    padding: 10px;
+  }
+
 }
