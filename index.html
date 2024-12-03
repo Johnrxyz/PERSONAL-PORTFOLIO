@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body id="hero">
+      <!-- NAVIGATION BAR HERE -->
       <header class="header">
           <nav class="navbar">
-            <ul class="phonebar">
-                <li onclick=hideSidebar()><a href="#"><p>close</p></a></li>
+           <ul class="phonebar">
+                <li onclick=hideSidebar()><a href="#"><p>CLOSE</p></a></li>
                 <li><a href="#hero">HOME</a></li>
                 <li><a href="#aboutSection">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li> 
               </ul>
 
             <ul class="topnav">
-              <li class="hideOnMobile"><a href="#hero">HOME</a></li>
+              <li class="hideOnMobile" ><a href="#hero">HOME</a></li>
               <li class="hideOnMobile"><a href="#aboutSection">ABOUT</a></li>
-              <li class="hideOnMobile"><a href="#">CONTACT</a></li>
+              <li class="hideOnMobile"><a href="#projects">PROJECTS</a></li>
+              <li class="hideOnMobile"><a href="#contact">CONTACT</a></li>
 
               <li class="menu-button" onclick=showSidebar()><a href="#"><p>JUMP THROUGH SECTION +</p></a></li>
             </ul>
           </nav>
         </header>
+      <!-- END OF NAVAGITION BAR   -->
 
-      <section class="firstPart" id="hero">
+      <!-- HERO -->
+      <section class="firstPart">
           <div class="mainContent">
             <div class="right-column">
               <div class="profileInfo">
@@ -40,15 +45,18 @@
                   <p class="mainP">Born in <strong>Lucena City, Philippines</strong></p>
                   <p class="mainP" id="lastChild">Studying at <strong>Dalubhasaan ng Lunsod ng Lucena</strong></p>
 
-                  
                   <div class="socialItem">
                     <img src="assets/fb.png" alt="Facebook Icon" class="icon">
                     <span><a href="https://www.facebook.com/johnrey.mansilungan" target="_blank">Johnrey Mansilungan</a></span>
                   </div>
                   <div class="socialItem">
-                      <img src="assets/tt.png" alt="X (Twitter) Icon" class="icon">
-                      <span><a href="https://www.tiktok.com/@johnrey.py?_t=8rsoAujBC7u&_r=1" target="_blank">Johnrey Mansilungan</a></span>
+                      <img src="assets/gmail.png" alt="GMAIL Icon" class="icon">
+                      <span><a href="mailto:mansilungan.johnrey.dll@gmail.com" target="_blank">mansilungan.johnrey.dll@gmail.com</a></span>
                   </div>
+                  <div class="socialItem">
+                    <img src="assets/tt.png" alt="tiktok Icon" class="icon">
+                    <span><a href="https://www.tiktok.com/@johnrey.py?_t=8rsoAujBC7u&_r=1" target="_blank">@johnrey.py</a></span>
+                </div>
                   <div class="socialItem">
                       <img src="assets/ig.png" alt="Instagram Icon" class="icon">
                       <span><a href="https://www.instagram.com/johnrxyz_/" target="_blank">@johnrxyzu_</a></span>
@@ -59,8 +67,12 @@
                   </div>
 
                   <div  class="socialItem" id="socialBTN" onclick=showSocials()>
-                    <span><a href="">MY SOCIALS ⟶</a></span>
+                    <span>MY SOCIALS ⟶</span>
                 </div>
+
+                <div  class="socialItem" id="closesocialBTN" onclick=hideSocials()>
+                  <span>CLOSE ⟶</span>
+              </div>
 
                 </div>
               </div>
@@ -76,20 +88,22 @@
               </p>
             </section>
       </section>
+      <!-- END OF HERO -->
 
+
+      <!-- ABOUT SECTION HERE -->
       <section class="about" id="aboutSection">
         <div class="nouns">
           <h1>SON. BROTHER. FRIEND. <br>
             FAMILY. STUDENT. <br>
             BLACK.<br>
             DOG OWNER.<br>
-            ASTEROID DESTROYER.<br>
+            GALAXY ANNIHILATOR.<br>
             MEGATRON.</h1>
         </div>
 
         <div class="skillContainer">
           <div class="skill">19 YEARS OF LIVING, <br>MY CAPABILITIES <br>SO FAR</div>
-
           <div class="skillContent">
               <div class="column">
                   <p>Web Development</p>
@@ -105,7 +119,7 @@
                   <p>Video Editing</p>
                   <p>Photo Editing</p>
                   <p>PPT Making</p>
-                  <p>Lulu</p>
+                  <p>lulu</p>
                   <p>Sha-</p>
               </div>
       
@@ -114,15 +128,15 @@
                   <p>Assume</p>
                   <p>Starve</p>
                   <p>Silos</p>
-                  <p>Tumae nakapikit</p>
-                  <p>Not sleep</p>
+                  <p>Matulog nakamulat</p>
+                  <p>Tumae nakatayo</p>
               </div>
           </div>
         </div>
 
         <div class="toolContainer">
           <div class="toolContent">
-            <div class="toolTitle">Tools I'm Familiar With</div>
+            <div class="toolTitle">TOOLS I'M FAMILIAR WITH</div>
             <div class="toolsGrid">
               <div class="toolLogo"><img src="assets/python.png" alt="python logo"><p>Python</p></div>
               <div class="toolLogo"><img src="assets/css.png" alt="css logo"><p>CSS</p></div>
@@ -137,9 +151,53 @@
           </div>
         </div>
       </section>
+      <!-- END OF ABOUT SECTION -->
+
+
+      <!-- PROJECT SECTION HERE -->
+      <section class="projectSection" id="projects">
+        <div class="jumpContainer">
+          <div class="jumpHeader" onclick=showProjs()>
+            PROJECTS⟶
+          </div>
+          
+          <ul class="jumpList">
+            <li>
+              <a href="https://drive.google.com/drive/folders/1CtLIChJLbv6cC4TwmFIheVTit4QHqtdd?usp=sharing" target="_blank">FILMS</a>
+            </li>
+            <li>
+              <a href="https://github.com/Johnrxyz?tab=repositories" target="_blank">PROJECTS</a>
+            </li>
+            <li>
+              <a href="#photographs">PHOTOGRAPHS</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- END OF PROJECT SECTION -->
+
+
+      <!-- CONTACT SECTION DITO -->
+      <section class="contactSection" id="contact">
+        <div class="contactContainer">
+          <div class="contactText">
+            GET IN TOUCH WITH ME!
+          </div>
+          <form class="contactForm">
+            <div class="formRow">
+              <input type="text" placeholder="Your name*" required />
+              <input type="email" placeholder="Your email*" required />
+            </div>
+            <textarea placeholder="Write your message here" required></textarea>
+            <button type="submit" class="submitButton">
+              SUBMIT⟶
+            </button>
+          </form>
+        </div>
+      </section>
 
       <div class="footer">
-        © 2023 Johnrey Mansilungan. All rights reserved.
+        © 2024 Johnrey Mansilungan. All Rights Reserved.  
       </div>
 </body>
 </html>
