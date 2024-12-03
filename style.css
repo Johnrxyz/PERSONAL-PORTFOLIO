@@ -77,7 +77,7 @@ body {
     padding: 3%;
 }
 
-.main-content {
+.mainContent {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0px;
@@ -85,7 +85,7 @@ body {
 
 .left-column,
 .right-column {
-    flex-basis: 45%;
+    flex-basis: 50%;
 }
 
 /* HERO */
@@ -96,6 +96,10 @@ body {
     /* border: 1px solid white; */
     width: 200%;
     height: auto;
+}
+
+#lastChild {
+    margin-bottom: 4%;
 }
 
 .profile-image {
@@ -127,6 +131,10 @@ body {
     width: 24px;
     height: 24px;
     margin-right: 15px;
+}
+
+#socialBTN {
+    display: none;
 }
 
 span {
@@ -279,7 +287,7 @@ span {
     margin: auto;
 }
 
-.main-content {
+.mainContent {
     flex-direction: column;
 }
 
@@ -304,7 +312,7 @@ span {
 }
 
 .skill {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     margin-right: 0%;
 }
@@ -336,17 +344,13 @@ span {
 
 @media (max-width: 425px) {
 .profileDetails .mainP{
-    font-size: 100%;
+    font-size: 50%;
     width: 100%;
-    display: none;
+    /* display: none; */
 }
 
-.socialItem {
-    display: none;
-}
-
-.intro {
-    margin-top: -10%;
+#lastChild {
+    margin-bottom: 0%;
 }
 
 .firstPart {
@@ -361,15 +365,32 @@ span {
 
 .profile-image {
     width: 100%;
-    margin-bottom: 5%;
+}
+
+.socialItem {
+    margin-bottom: 0px;
+    display: none;
+}
+
+#socialBTN {
+    display: inline;
+}
+
+.socialItem:first-child {
+    margin-top: -5%;
 }
 
 .socialItem a {
-    font-size: 80%;
+    font-size: 50%;
+}
+
+.icon {
+    width: 12px;
+    height: 12px;
 }
 
 .fName {
-    font-size: 3em;
+    font-size: 2.6em;
 }
 
 .aboutMe {
