@@ -32,6 +32,11 @@ html {
     padding-bottom: .5%;
 }
 
+#hero:hover, .nouns:hover, .jobContainer:hover, .skillContainer:hover, .toolContainer:hover,
+.projectSection:hover, .contactSection:hover{
+    box-shadow: 0 0 15px rgba(221, 221, 221, 0.7);
+}
+
 .phonebar {
     position: fixed;
     top: 0;
