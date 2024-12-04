@@ -80,7 +80,9 @@ html {
     font-weight: 500;
     font-size: 1.5em;
 }
-
+.navbar a:hover {
+    border-bottom: 1px solid white;
+}
 
 /* MAIN CONTENT DITO */
 .firstPart {
@@ -190,6 +192,35 @@ span {
     color: black;
 }
 
+.jobContainer {
+    padding: 5%;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 4%;
+}
+
+.futureJOB {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.jobContainer p {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.interest {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.interest:hover, .jumpHeader:hover, .submitButton:hover, .socialItem:hover{
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
 .skillContainer {
     display: flex;
     padding: 5%;
@@ -213,7 +244,7 @@ span {
     width: 90%;
 }
 
-.column p:hover {
+.column p:hover, .jumpList li:hover{
     transform: translateY(-5px);
     transition: all 0.3s ease;
 }
@@ -331,14 +362,6 @@ span {
     justify-content: space-between;
     align-items: center;
   }
-  
-.jumpList a:hover {
-    color: #aaa; 
-  }
-
-.jumpHeader a:hover {
-    color: #d4d4d4; 
-  }
 
 .footer {
     color: white;
@@ -373,7 +396,12 @@ span {
     font-weight: bold;
     color: black;
   }
-  
+
+.contactText p {
+    font-size: 50%;
+    font-weight: 200;
+    margin-top: 5%;
+}
 .contactForm {
     flex: 1 1 50%;
     display: flex;
@@ -388,6 +416,7 @@ span {
   }
   
 input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
     flex: 1;
     padding: 0.75rem 1rem;
     border: none;
@@ -525,6 +554,7 @@ textarea::placeholder {
 
 #socialBTN {
     display: inline;
+    font-size: 50%;
 }
 
 .socialItem:first-child {
@@ -545,14 +575,22 @@ textarea::placeholder {
 }
 
 .aboutMe {
-    font-size: .8em;
+    font-size: 1.2em;
 }
 
 .nouns h1 {
     font-size: 2em;
 }
-.skill {
+.skill, .futureJOB, .toolTitle, .jumpHeader, .contactText{
     font-size: 1.5rem;
+}
+
+.interest {
+    font-size: .8rem;
+}
+
+.jobContainer p, .contactText p {
+    font-size: 1rem;
 }
 
 .column p {
