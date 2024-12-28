@@ -34,3 +34,7 @@ function showProjs(){
     const projs = document.querySelector(".jumpList");
     projs.style.display = "flex"
 }
+
+function showAlert(){
+    alert("No Photographs Yet!")
+}
